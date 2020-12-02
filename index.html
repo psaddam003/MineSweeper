@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>MineSweeper</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+<link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+
+<h2>MineSweeper</h2>
+
+
+<div class="clearfix">
+  <div id="game_container">
+   
+  </div>
+</div>
+
+<div>
+  
+
+  <div class="status_msg">
+    <strong>Mines Remaining:</strong> <span id="mine_count"></span>
+  </div>
+  <div class="status_msg">
+    <strong>Moves Made:</strong> <span id="moves_made"></span>
+  </div>
+  <div class="status_msg">
+    <strong>Game Status:</strong> <span id="game_status"></span>
+  </div>
+
+  <div style="margin: 10px 0px;">
+    <input id="validate_button" type="button" class="btn" value="Did I win?" />
+  </div>
+
+
+  <div style="margin: 15px 0px;">
+    <div style="margin: 8px 0px;">
+      <label for="new_rows">Rows:</label>
+      <input type="number" id="new_rows" placeholder="rows" value="8" />
+      <label for="new_cols">Cols:</label>
+      <input type="number" id="new_cols" placeholder="cols" value="8" />
+      <label for="new_mines">Mines:</label>
+      <input type="number" id="new_mines" placeholder="mines" value="10" />
+    </div>
+    <div style="font-size: 10pt;">*max size: 19 x 19</div>
+    <input id="new_game_button" type="button" class="btn" value="Create new game!" />
+  </div>
+  
+</div>
+
+  <script src='https://use.fontawesome.com/e51c6dea6f.js'></script><script  src="./script.js"></script>
+
+</body>
+</html>
